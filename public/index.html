@@ -1,0 +1,74 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>IdeaBox</title>
+  <meta name="description" content="A place to store your ideas for future riches.">
+  <meta name="author" content="Steve Kinney">
+
+  <link rel="stylesheet" href="style.css?v=1.0">
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <div class="container">
+
+    <heading>
+      <h1>IdeaBox</h1>
+    </heading>
+
+    <section id="new-idea">
+      <form id="new-idea-form">
+        <label>Title</label>
+        <input type="text" placeholder="Title" id="new-idea-title">
+        <label>Body</label>
+        <input type="text" placeholder="Body" id="new-idea-body">
+        <input type="submit" value="Submit Your Great Idea">
+      </form>
+    </section>
+
+    <section id="ideas">
+      <div class="idea">
+        <h2>Placeholder Idea</h2>
+        <p>This isn't real.</p>
+        <div class="buttons">
+          <button class="edit">Edit</button>
+          <button class="delete">Delete</button>
+          <form class="edit-idea-form">
+            <label>Title</label>
+            <input type="text" placeholder="Title" class="idea-title">
+            <label>Body</label>
+            <input type="text" placeholder="Body" class="idea-body">
+            <input type="submit" value="Update Idea">
+            <button class="cancel">Nevermind</button>
+          </form>
+        </div>
+      </div>
+      <div class="idea">
+        <h2>Placeholder Idea</h2>
+        <p>This isn't real.</p>
+        <div class="buttons">
+          <button class="edit">Edit</button>
+          <button class="delete">Delete</button>
+          <form class="edit-idea-form">
+            <label>Title</label>
+            <input type="text" placeholder="Title" class="idea-title">
+            <label>Body</label>
+            <input type="text" placeholder="Body" class="idea-body">
+            <input type="submit" value="Update Idea">
+            <button class="cancel">Nevermind</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="/script.js"></script>
+</body>
+</html>
