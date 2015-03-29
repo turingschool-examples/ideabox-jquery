@@ -1,5 +1,5 @@
 * {
-  font-family: "Courier New", Helvetica, Arial, sans-serif;
+  font-family: "Courier New", "Courier", monospace;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -7,8 +7,14 @@
 
 .container {
   margin: auto;
-  max-width: 500px;
+  max-width: 600px;
   padding: 0.5em 1em;
+}
+
+#new-idea {
+  background-color: rgba(182, 221, 211, 0.4);
+  padding: 1em;
+  margin-bottom: 1em;
 }
 
 .idea {
@@ -17,11 +23,12 @@
   margin-bottom: 1em;
 }
 
-h1, h2 {
+h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child {
   margin-top: 0;
 }
 
 label {
+  background-color: rgb(248, 212, 58);
   display: block;
   margin: 1em 0 0.5em 0;
   font-weight: bold;
@@ -41,6 +48,7 @@ input[type="text"] {
 }
 
 input[type="submit"], button {
+  color: white;
   border: none;
   background-color: rgb(98, 186, 157);
   padding: 0.5em;
@@ -69,4 +77,16 @@ button.cancel:hover, button.delete:hover {
 
 .edit-idea-form {
   display: none;
+}
+
+@media (min-width: 575px) {
+  #new-idea {
+    max-width: 300px;
+    float: left;
+  }
+
+  #ideas{
+    float: right;
+    max-width: 300px;
+  }
 }
