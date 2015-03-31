@@ -67,6 +67,6 @@ describe IdeaBox do
 
   it "blows up if you pit an ID that's not there" do
     get '/api/ideas/999'
-    last_response.status == 500
+    assert_equal last_response.status, 500
   end
 end
